@@ -128,19 +128,27 @@ table#report_list th {
 }
 
 table#report_list .report_name {
-    width: 20%;
+    width: 10%;
     padding: 10px 2%;
 }
 table#report_list .report_date {
-    width: 20%;
+    width: 15%;
 }
 
 table#report_list .report_title {
-    width: 37%;
+    width: 25%;
 }
 
 table#report_list .report_action {
-    width: 13%;
+    width: 20%;
+}
+
+table#report_list .report_evaluation {
+    width: 15%;
+}
+
+table#report_list .report_people {
+    width: 15%;
 }
 
 pre {

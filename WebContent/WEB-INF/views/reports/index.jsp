@@ -16,6 +16,8 @@
                     <th class="report_date">日付</th>
                     <th class="report_title">タイトル</th>
                     <th class="report_action">操作</th>
+                    <th class="report_evaluation">評価レベル</th>
+                    <th class="report_people">評価した人</th>
                 </tr>
                 <c:forEach var="report" items="${reports}" varStatus="status">
                     <tr class="row${status.count % 2}">
@@ -23,6 +25,8 @@
                         <td class="report_date"><fmt:formatDate value='${report.report_date}' pattern='yyyy-MM-dd' /></td>
                         <td class="report_title">${report.title}</td>
                         <td class="report_action"><a href="<c:url value='/reports/show?id=${report.id}' />">詳細を見る</a></td>
+                        <td class="report_evaluation"><a href="<c:url value='/reports/evaluation_level' />">評価を見る</a></td>
+                        <td class="report_people"><c:out value="${report.employee.name}" /></td>
                     </tr>
                 </c:forEach>
             </tbody>
@@ -42,6 +46,7 @@
             </c:forEach>
         </div>
         <p><a href="<c:url value='/reports/new' />">新規日報の登録</a></p>
+        <p><a href="<c:url value='/reports/new_evaluation' />">日報の評価をする</a></p>
 
     </c:param>
 </c:import>
