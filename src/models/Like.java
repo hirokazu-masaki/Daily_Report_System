@@ -35,9 +35,6 @@ public class Like {
     @JoinColumn(name = "liked_report_id")
     private Integer liked_report_id;
 
-    @Column(name = "rank")
-    private Integer rank;
-
 
     public Integer getLike_id() {
         return like_id;
@@ -61,14 +58,6 @@ public class Like {
 
     public void setLiked_report_id(Integer liked_report_id) {
         this.liked_report_id = liked_report_id;
-    }
-
-    public Integer getLank() {
-        return rank;
-    }
-
-    public void setLank(Integer rank) {
-        this.rank = rank;
     }
 
 }

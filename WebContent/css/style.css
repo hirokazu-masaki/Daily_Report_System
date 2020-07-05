@@ -128,28 +128,21 @@ table#report_list th {
 }
 
 table#report_list .report_name {
-    width: 10%;
+    width: 20%;
     padding: 10px 2%;
 }
 table#report_list .report_date {
-    width: 15%;
-}
-
-table#report_list .report_title {
-    width: 25%;
-}
-
-table#report_list .report_action {
     width: 20%;
 }
 
-table#report_list .report_evaluation {
-    width: 15%;
+table#report_list .report_title {
+    width: 30%;
 }
 
-table#report_list .report_people {
-    width: 15%;
+table#report_list .report_action {
+    width: 30%;
 }
+
 
 pre {
     font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
