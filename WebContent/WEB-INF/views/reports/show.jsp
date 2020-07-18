@@ -42,8 +42,12 @@
                     <tbody>
                         <tr>
                             <th>評価した人</th>
-                            <td><c:out value="${like.employee.name}" /></td>
                         </tr>
+                        <c:forEach var="like" items="${likes}" varStatus="status">
+                            <tr class="row${status.count % 2}">
+                                <c:out value="${like.id}" />
+                            </tr>
+                        </c:forEach>
                     </tbody>
                 </table>
                 <c:if test="${sessionScope.login_employee.id == report.employee.id}">

@@ -23,7 +23,7 @@
                         <td class="report_date"><fmt:formatDate value='${report.report_date}' pattern='yyyy-MM-dd' /></td>
                         <td class="report_title">${report.title}</td>
                         <td class="report_action"><a href="<c:url value='/reports/show?id=${report.id}' />">詳細を見る</a>
-                        <br><button type="submit"><a href="<c:url value='/new_like?id=${like.like_employee_id}' />">いいね!</a></button></td>
+                        <br><button type="submit"><a href="<c:url value='/new_like?id=${report.id}' />">いいね!</a></button></td>
                     </tr>
                 </c:forEach>
             </tbody>
