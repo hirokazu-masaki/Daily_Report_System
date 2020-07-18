@@ -36,19 +36,6 @@
                             </td>
                         </tr>
                     </tbody>
-                </table><br>
-                <br>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>評価した人</th>
-                        </tr>
-                        <c:forEach var="like" items="${likes}" varStatus="status">
-                            <tr class="row${status.count % 2}">
-                                <c:out value="${like.id}" />
-                            </tr>
-                        </c:forEach>
-                    </tbody>
                 </table>
                 <c:if test="${sessionScope.login_employee.id == report.employee.id}">
                     <p><a href="<c:url value="/reports/edit?id=${report.id}" />">この日報を編集する</a></p>
